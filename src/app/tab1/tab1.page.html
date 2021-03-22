@@ -13,5 +13,17 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-segment>
+    <ion-segment-button (click)="onBaseClick()">
+      <ion-label>Base</ion-label>
+    </ion-segment-button>
+    <ion-segment-button (click)="onNestedClick()">
+      <ion-label>Nested</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-button (click)="goToDetails()">Go to details</ion-button>
+
+  <router-outlet></router-outlet>
+
 </ion-content>
