@@ -1,0 +1,7 @@
+{
+  "name": "routing-back-bug",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
